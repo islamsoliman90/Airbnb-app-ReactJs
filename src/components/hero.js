@@ -1,5 +1,5 @@
-import Img from "../image/Group 77.png";
 
+import Img from "../image/Group 77.png";
 export default function Hearo ()
 {
     return (

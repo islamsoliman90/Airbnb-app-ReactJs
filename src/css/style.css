@@ -22,6 +22,7 @@ body {
     margin: auto;
     width: 550px;
     height: 70px;
+
 }
 
 .navbar {
@@ -39,10 +40,6 @@ body {
     margin: 26px auto;
 }
 
-.desc {
-    padding-left: 26px;
-
-}
 
 .desc h2 {
     display: block;
@@ -57,7 +54,7 @@ body {
 
 .desc p {
     display: block;
-    width: 320px;
+    width: 100%;
     height: 56px;
     font-family: 'Poppins';
     font-style: normal;
@@ -70,9 +67,20 @@ body {
 /*Card section*/
 .cards {
     width: 550px;
-    /* overflow: hidden; */
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 0 0 auto;
+    overflow-y: auto;
     position: relative;
-    height: 370px;
+}
+
+.card {
+    width: 175px;
+    display: flex;
+    flex: 0 0 auto;
+    position: relative;
+    margin: 0 10px;
+
 }
 
 .card .sold {
@@ -82,21 +90,6 @@ body {
     background: #FFFFFF;
     border-radius: 2px;
     padding: 10px;
-}
-
-.cards :nth-of-type(2) {
-    left: 185px;
-}
-
-.cards :nth-of-type(3) {
-    left: 380px;
-}
-
-.card {
-    position: absolute;
-    width: 175px;
-    height: 357px;
-    margin: 10px;
 }
 
 .card--img {
